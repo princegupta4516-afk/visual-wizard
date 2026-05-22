@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Visual Wizard | Prince</title>
+  <meta name="description" content="Portfolio of Prince — Cinematic animations, VFX, motion graphics, brand design and more.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">VISUAL WIZARD</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading Portfolio...</div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">VW</div>
+    <div>
+      <div class="nav-logo-text">VISUAL WIZARD</div>
+      <span class="nav-logo-sub">by Prince</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">✦ Let's Work Together</a>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html" class="active">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="nav-cta">✦ Let's Work Together</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="section-label" style="justify-content:center;">Creative Works</div>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,5rem);margin-bottom:1rem;">
+      The <span class="highlight">Portfolio</span>
+    </h1>
+    <p style="color:var(--gray);font-size:1.1rem;max-width:600px;margin:0 auto;line-height:1.8;">
+      A curated collection of cinematic animations, stunning visuals, and immersive brand experiences.
+    </p>
+  </div>
+</div>
+
+<!-- PORTFOLIO FILTER + GRID -->
+<section>
+  <div class="section-container">
+
+    <!-- Filters -->
+    <div class="filter-wrap anim-fadeup" style="justify-content:center;margin-bottom:3rem;">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="animation">2D Animation</button>
+      <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="vfx">VFX</button>
+      <button class="filter-btn" data-filter="poster">Posters</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+
+     <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="animation">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1ZOpXlHItgq8WH6DCjYUGmWhfonp0LbhU/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">2D Animation</div>
+          <div class="portfolio-name">Boat Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+       <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1SvI_3fWC9tz0LHVMuJ4XZefuhONmZtUa/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">Headphone AD</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="vfx">
+        <img src="img/ChatGPT Image May 15, 2026, 10_37_02 AM.png" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">VFX</div>
+          <div class="portfolio-name">Bhag Dk Bose</div>
+          <div class="portfolio-link" >View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-4" data-cat="branding">
+       <img src="img/l1.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Branding</div>
+          <div class="portfolio-name">Logo</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="img/omen.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Omen</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+     <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="animation">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/16MT4g5Dm72WPpQXFnK0k9V1K6Xx5Ge-O/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">2D Animation</div>
+          <div class="portfolio-name">Rocket Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-1" data-cat="motion">
+        <div class="video-box">
+  <iframe
+    src="https://drive.google.com/file/d/1zLalDMM56olxBuaMZJGLjamHiViRQRCU/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+</div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">UI Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-2" data-cat="branding">
+        <img src="img/l3.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Branding</div>
+          <div class="portfolio-name">Logo Cosmo</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+      <div class="portfolio-card anim-fadeup anim-delay-1" data-cat="vfx">
+        <div class="video-box">
+  <iframe
+    src="https://drive.google.com/file/d/1VJjxMN5U_znAhwD5CuR5QWMApXbF9YA0/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+</div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Video Editing</div>
+          <div class="portfolio-name">Horimiya Trailer</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+   <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/17ETLOVbEe-yR4AiFrZlpW52Yoh9lUgNx/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">Logo Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		  <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1HPitoydlCKRoUPoKzqxrwUc5d8-YYlco/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">Logo Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1Macq_lhLSKe2NjTRP0gPQv9QfWhSpToT/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">UI Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+    
+	  <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1Y8Him3MUB7cEMLBJBQ5ARRubEUCAOOOm/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">Nike AD</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		  <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1IHDMWY_FyXKghUGahV_MKs6cawa3VC2I/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">UI Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		  <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="motion">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/16hsH3ADX3DSbeQ7pWvfz1TKHWZtLUwgy/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Motion Graphics</div>
+          <div class="portfolio-name">3D Floating Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		 <div class="portfolio-card anim-fadeup anim-delay-3" data-cat="animation">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1vv7MzPdDMCgHWrXZTNDoZrbizuMTM7eu/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">2D Animation</div>
+          <div class="portfolio-name">Car Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+	<div class="portfolio-card anim-fadeup anim-delay-3" data-cat="animation">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/1HletDOmCNK7gA7iNpF38D8fgwF-EWqyA/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">2D Animation</div>
+          <div class="portfolio-name">Balloon Movie Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-3" data-cat="animation">
+        <div class="video-box"><iframe
+    src="https://drive.google.com/file/d/11u2xm2pzfs766yrSAauRCaze6mOzs9cR/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+			  </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">2D Animation</div>
+          <div class="portfolio-name">Clock Animation</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		 <div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/abhay eye visuals.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Abhay Eye Visuals</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+
+		<div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/chamber valorant.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Chamber Valorant</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/takken 8 FINAL.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Takken 8</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/GAMING ARCADE 1.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Gaming Arcade</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/ll1.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">LoopLush</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		<div class="portfolio-card anim-fadeup anim-delay-5" data-cat="poster">
+      <img src="graphic design/posters/insta hoodie.jpg" onclick="openFullscreen(this)">
+        <div class="portfolio-overlay">
+          <div class="portfolio-cat">Poster Design</div>
+          <div class="portfolio-name">Hoodie Mockup</div>
+          <div class="portfolio-link">View Project →</div>
+        </div>
+        <div class="portfolio-glow"></div>
+      </div>
+		
+		
+	  </div>
+  </div>
+</section>
+
+<!-- CASE STUDY SLIDER -->
+<section class="case-study">
+  <div class="section-container">
+    <div class="text-center anim-fadeup" style="margin-bottom:3rem;">
+      <div class="section-label" style="justify-content:center;">Featured Case Study</div>
+      <h2 class="section-title">Deep Dive Into <span class="highlight">Projects</span></h2>
+    </div>
+
+    <div class="case-slider glass-card">
+
+      <!-- SLIDE 1 -->
+      <div class="case-slide active">
+        <div class="case-img">
+          <iframe 
+    src="https://drive.google.com/file/d/1SvI_3fWC9tz0LHVMuJ4XZefuhONmZtUa/preview"
+    width="100%" 
+    height="100%" 
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
+          <div class="case-img-overlay"></div>
+         
+        </div>
+        <div class="case-content">
+          <div class="case-tag">Motion Graphics· 2026</div>
+          <div class="case-title">Apple Airpods Max <span class="highlight">Product Animation</span></div>
+          <div class="case-desc">Creative visual artist crafting cinematic matte paintings, VFX environments, and high-detail digital worlds with a focus on atmosphere, storytelling, and realism.
+</div>
+          <div class="case-pipeline">
+            <div class="pipeline-step"><span>✏️</span> Storyboard</div>
+            <div class="pipeline-step"><span>🎨</span> Design</div>
+            <div class="pipeline-step"><span>🎬</span> Animation</div>
+            <div class="pipeline-step"><span>🔊</span> Sound</div>
+            <div class="pipeline-step"><span>📦</span> Delivery</div>
+          </div>
+          <div class="case-nav">
+            <button class="slider-arrow" id="case-prev">←</button>
+            <div class="case-dots">
+              <button class="slider-dot case-dot active"></button>
+              <button class="slider-dot case-dot"></button>
+              <button class="slider-dot case-dot"></button>
+            </div>
+            <button class="slider-arrow" id="case-next">→</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="case-slide">
+        <div class="case-img">
+         <iframe 
+    src="https://drive.google.com/file/d/1ZOpXlHItgq8WH6DCjYUGmWhfonp0LbhU/preview"
+    width="100%" 
+    height="100%" 
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
+          <div class="case-img-overlay"></div>
+          
+        </div>
+        <div class="case-content">
+          <div class="case-tag">2D Animation· 2025</div>
+          <div class="case-title">Boat Animation<span class="highlight">Calm Water Scene</span></div>
+          <div class="case-desc">A cinematic journey across endless waters, blending atmosphere, emotion, and visual storytelling into a surreal oceanic world. Crafted with immersive lighting, realistic environments, and dreamlike composition.
+</div>
+          <div class="case-pipeline">
+            <div class="pipeline-step"><span>🔍</span> Research</div>
+            <div class="pipeline-step"><span>⚡</span> Concept</div>
+            <div class="pipeline-step"><span>🌀</span> Motion</div>
+            <div class="pipeline-step"><span>🎯</span> Refine</div>
+            <div class="pipeline-step"><span>📦</span> Export</div>
+          </div>
+          <div class="case-nav">
+            <button class="slider-arrow" id="case-prev">←</button>
+            <div class="case-dots">
+              <button class="slider-dot case-dot"></button>
+              <button class="slider-dot case-dot active"></button>
+              <button class="slider-dot case-dot"></button>
+            </div>
+            <button class="slider-arrow" id="case-next">→</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="case-slide">
+        <div class="case-img">
+          <iframe 
+    src="https://drive.google.com/file/d/1IHDMWY_FyXKghUGahV_MKs6cawa3VC2I/preview"
+    width="100%" 
+    height="100%" 
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+          <div class="case-img-overlay"></div>
+         
+        </div>
+        <div class="case-content">
+          <div class="case-tag">UI Animation 2026</div>
+          <div class="case-title">Modern Glassmorphism<span class="highlight"> UI Animation </span></div>
+          <div class="case-desc">A futuristic UI experience blending sleek motion design, cinematic transitions, and immersive digital aesthetics. Designed to create a modern, interactive visual journey with clean animations and high-end interface visuals.
+</div>
+          <div class="case-pipeline">
+           <div class="pipeline-step"><span>✏️</span> Storyboard</div>
+            <div class="pipeline-step"><span>🎨</span> Design</div>
+            <div class="pipeline-step"><span>🎬</span> Animation</div>
+            <div class="pipeline-step"><span>🔊</span> Sound</div>
+            <div class="pipeline-step"><span>📦</span> Delivery</div>
+          </div>
+          <div class="case-nav">
+            <button class="slider-arrow" id="case-prev">←</button>
+            <div class="case-dots">
+              <button class="slider-dot case-dot"></button>
+              <button class="slider-dot case-dot"></button>
+              <button class="slider-dot case-dot active"></button>
+            </div>
+            <button class="slider-arrow" id="case-next">→</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="margin-bottom:1.25rem;display:inline-flex;">
+        <div class="nav-logo-icon">VW</div>
+        <div>
+          <div class="nav-logo-text">VISUAL WIZARD</div>
+          <span class="nav-logo-sub">by Prince</span>
+        </div>
+      </a>
+      <p class="footer-bio">A creative studio crafting cinematic animations, stunning visuals, and immersive storytelling experiences for brands that dare to be extraordinary.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">📷</a>
+        <a href="#" class="social-btn">🎨</a>
+        <a href="#" class="social-btn">▶</a>
+        <a href="#" class="social-btn">🐦</a>
+        <a href="#" class="social-btn">💼</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="portfolio.html" class="footer-link">Portfolio</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">2D & 3D Animation</a>
+        <a href="#" class="footer-link">Logo & Brand Design</a>
+        <a href="#" class="footer-link">Motion Graphics</a>
+        <a href="#" class="footer-link">Poster Design</a>
+        <a href="#" class="footer-link">Video Editing</a>
+        <a href="#" class="footer-link">VFX</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Get in Touch</div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📧</span>
+        <div class="footer-contact-text">prince@visualwizard.studio</div>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📞</span>
+        <div class="footer-contact-text">+1 (555) 000-0000</div>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon">📍</span>
+        <div class="footer-contact-text">Los Angeles, CA</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span>Visual Wizard</span> by Prince. All rights reserved.</div>
+    <div class="footer-copy">Crafted with ❤️ for the creative universe.</div>
+  </div>
+</footer>
+
+<script>
+  // Portfolio filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioCards = document.querySelectorAll('.portfolio-card[data-cat]');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.filter;
+      portfolioCards.forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+          card.style.animation = 'fadeIn 0.5s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Case study slider
+  const caseSlides = document.querySelectorAll('.case-slide');
+  let currentCase = 0;
+  function showCase(idx) {
+    caseSlides.forEach((s, i) => s.classList.toggle('active', i === idx));
+    document.querySelectorAll('.case-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+  document.querySelectorAll('#case-prev').forEach(btn => btn.addEventListener('click', () => {
+    currentCase = (currentCase - 1 + caseSlides.length) % caseSlides.length;
+    showCase(currentCase);
+  }));
+  document.querySelectorAll('#case-next').forEach(btn => btn.addEventListener('click', () => {
+    currentCase = (currentCase + 1) % caseSlides.length;
+    showCase(currentCase);
+  }));
+  document.querySelectorAll('.case-dot').forEach((dot, i) => dot.addEventListener('click', () => {
+    currentCase = i;
+    showCase(currentCase);
+  }));
+
+  // Scroll animations
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.anim-fadeup').forEach(el => obs.observe(el));
+</script>
+<button class="scroll-top" id="scrollTop">↑</button>
+<script>
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => scrollTopBtn?.classList.toggle('visible', window.scrollY > 400));
+  scrollTopBtn?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+<script src="script.js"></script>
+	<script>
+
+function openFullscreen(img){
+
+    if(img.requestFullscreen){
+        img.requestFullscreen();
+    }
+
+}
+
+</script>
+</body>
+</html>
